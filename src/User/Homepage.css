@@ -1,0 +1,376 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Merienda";
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(155, 33, 231);
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    padding: 10px 20px;
+    align-items: center; /* Ensures proper vertical alignment */
+}
+
+/* Logo styling */
+.logo {
+    width: 300px;
+    height: auto;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black, 
+    0 0 1em rgb(209, 237, 67),
+    0 0 0.2em rgb(255, 247, 0);
+}
+
+/* Optional styling */
+.optional {
+    outline: none;
+    font-size: 1rem;
+    border-radius: 8px 0 0 8px;
+    border: 2px solid #fff;
+}
+
+/* Searchbar styling */
+.searchbar {
+    display: flex;
+    width: 40%;
+    height: 57px;
+    margin-top: 15px;
+}
+
+/* Input field styling */
+.searchbar input {
+    width: 100%; /* Full width within the parent container */
+    max-width: 900px; /* Limits the width on larger screens */
+    outline: none;
+    font-size: 1rem; /* Readable font size */
+    border: 2px solid #fff;
+    border-radius: 0px 0px 0px  0px ;
+    padding: 8px 12px; /* Comfortable padding inside the input */
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}
+
+.search-icon {
+    width: 70px;
+    border-radius: 0 8px 8px 0;
+    background-color: #fff;
+}
+
+.search-icon .fa-magnifying-glass {
+    padding: 18px;
+    font-size: 22px;
+    color:  rgb(155, 33, 231);
+}
+
+/* Language bar styling */
+.language-bar {
+    color: #fff;
+    height: 57px;
+    outline: none;
+    font-size: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: rgb(155, 33, 231);
+}
+
+.language-bar:hover {
+    border: 2px solid rgb(155, 33, 231);
+}
+
+/* Login button styling */
+.login-Btn {
+    width: 80px;
+    height: 37px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    cursor: pointer; 
+    transition: none;
+    border: 2px solid transparent;
+}
+
+/* Information-Bar */
+.information {
+    height: 25px;
+    display: flex;
+    color: #fff;
+    background-color: rgb(46, 7, 71);
+}
+
+.information .material-symbols-outlined {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 50px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 
+    0 0 1em rgb(209, 237, 67), 
+    0 0 0.2em rgb(255, 247, 0);
+}
+
+#main-img img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-size: cover; /* Optional */
+    background-position: center;
+}
+
+/* Login-Container full Code and Responsive */
+.Login-main-box {
+    display: none;
+    position: fixed;
+    width: 60%;
+    height: 350px;
+    min-width: 950px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    background-color: rgb(155, 33, 231);
+}
+
+.img-box {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-box h1 {
+    position: absolute;
+    top: 7%;
+    left: 20%;
+    font-size: 22px;
+    color: #084352;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 75.1%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container .close-icon {
+    width: 30px;
+    height: 10px;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.form-container form h3 {
+    text-align: center;
+    color: #111111;
+}
+
+form input {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    width: 70%;
+    height: 40px;
+    border-radius: 6px;
+    margin: 20px 0px 0px 60px;
+    padding: 0 7px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+form p {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+form a {
+    font-size: 18px;
+    color: #0f0f11;
+    margin: 5px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+form button {
+    width: 50%;
+    height: 45px;
+    outline: none;
+    border: none;
+    margin-left: 25%;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 15px;
+    background-color: rgb(167, 206, 28);
+    font-size: 18px;
+}
+
+#signUpBox form input {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    margin: 20px 0px 0px 10px;
+    padding: 0 7px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+#signUpBox form button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 2rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    .searchbar {
+        width: 60%;
+        margin-top: 15px;
+    }
+
+    .searchbar input {
+        font-size: 0.9rem;
+    }
+
+    .search-icon {
+        width: 60px;
+    }
+
+    .language-bar {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .login-Btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        width: 70%;
+    }
+
+    .searchbar {
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    .language-bar {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .login-Btn {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .Login-main-box {
+        width: 80%;
+        min-width: unset;
+        height: 400px;
+    }
+
+    .img-box {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-container form input {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .searchbar {
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .search-icon {
+        width: 50px;
+    }
+
+    .language-bar {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .login-Btn {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .Login-main-box {
+        width: 90%;
+        height: 350px;
+    }
+
+    .form-container form input {
+        width: 90%;
+    }
+}

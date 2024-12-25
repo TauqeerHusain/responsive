@@ -1,0 +1,270 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Merienda";
+  text-transform: capitalize;
+  box-sizing: border-box; /* Helps with padding and border handling */
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(155, 33, 231);
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  padding: 10px 20px;
+}
+
+/* Logo styling */
+.logo {
+  width: 300px;
+  height: auto;
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(209, 237, 67),
+    0 0 0.2em rgb(255, 247, 0);
+}
+
+/* Navigation bar styling */
+.navigation-bar {
+  display: flex;
+  height: 57px;
+  margin-top: 15px;
+  border-radius: 7px;
+}
+
+.navigation-bar ul {
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.navigation-bar li {
+  display: inline;
+}
+
+.navigation-bar a {
+  color: #fff;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* User icon styling */
+.user i {
+  color: #fff;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 57px;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  border-radius: 6px;
+  margin-left: auto; /* Use auto to align to the right */
+}
+
+/* Information bar styling */
+.information-bar {
+  height: 25px;
+  color: #fff;
+  background-color: rgb(46, 7, 71);
+}
+
+/* User box styling */
+.userbox {
+  display: flex;
+  margin-top: 8%;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* User header styling */
+.user-header {
+  display: flex;
+  position: relative;
+  margin-left: 10%;
+  width: 80%;
+  height: auto;
+  background-color: rgb(155, 33, 231);
+}
+
+.user-header img {
+  width: 300px; /* Diameter of the circle */
+  height: 300px;
+  padding: 40px;
+  margin-left: 50px;
+  border-radius: 50%; /* Makes it a circle */
+}
+
+.user-header h1 {
+  display: flex;
+  width: 80%;
+  height: auto;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(209, 237, 67),
+    0 0 0.2em rgb(255, 247, 0);
+}
+
+/* User information styling */
+.user-information {
+  display: flex;
+  position: relative;
+  margin-left: 10%;
+  width: 80%;
+  height: auto;
+  background-color: rgb(184, 151, 204);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 2rem;
+    width: 80%;
+  }
+
+  .navigation-bar {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navigation-bar ul {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  .navigation-bar a {
+    padding: 10px;
+  }
+
+  .user i {
+    font-size: 1rem;
+    margin-left: auto;
+  }
+
+  .user-header {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .user-header img {
+    width: 250px; /* Make the image smaller for tablet-sized screens */
+    height: 250px;
+  }
+
+  .user-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .user-information {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    width: 70%;
+    text-align: center;
+  }
+
+  .navigation-bar ul {
+    font-size: 0.8rem;
+  }
+
+  .navigation-bar a {
+    padding: 10px;
+  }
+
+  .user-header img {
+    width: 200px; /* Reduce image size */
+    height: 200px;
+  }
+
+  .user-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .user-information {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .userbox {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  .navigation-bar ul {
+    font-size: 0.7rem;
+  }
+
+  .navigation-bar a {
+    padding: 8px;
+  }
+
+  .user i {
+    width: 80px;
+    font-size: 1rem;
+  }
+
+  .user-header {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .user-header img {
+    width: 180px; /* Further reduce image size for mobile */
+    height: 180px;
+  }
+
+  .user-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .user-information {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .userbox {
+    margin-top: 3%;
+  }
+}
